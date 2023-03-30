@@ -29,6 +29,13 @@ class Movie {
         return $this->anno_di_uscita;
     }
 
+    function getMovie() 
+    {
+        $movie_Card = $this->titolo . ' = ' . $this->regia . ', ' . $this->casa_di_produzione . ', ' . $this->genere . ', ' . $this->durata . ', ' . $this->anno_di_uscita . '.';
+
+        return $movie_Card;
+    }
+
 } 
 
 

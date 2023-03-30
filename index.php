@@ -27,7 +27,11 @@ var_dump($interstellar);
 <body>
     <main>
         <div class="container">
-            
+            <ul>
+                <li>
+                    <?php echo $interstellar->getMovie(); ?>
+                </li>
+            </ul>
         </div>
     </main>
 </body>
