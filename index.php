@@ -1,24 +1,34 @@
 <?php
 
-class Movie {
+require_once "./models/Movie.php";
 
-    public $titolo;
-    public $anno_di_uscita;
-    public $regia;
-    public $casa_di_produzione;
-    public $genere;
-    public $durata;
+$interstellar = new Movie(
+    'Interstellar',
+    'Christopher Nolan',
+    'Legendary Pictures, Syncopy Films, Lynda Obst Productions',
+    'Fantascienza',
+    '169 min'
+);
 
-} 
-
-$interstellar = new Movie();
-$interstellar->titolo = 'Interstellar';
 $interstellar->anno_di_uscita = '2014';
-$interstellar->regia = 'Christopher Nolan';
-$interstellar->casa_di_produzione = 'Legendary Pictures, Syncopy Films, Lynda Obst Productions';
-$interstellar->genere = 'Fantascienza';
-$interstellar->durata = '169 min';
 
-
+var_dump($interstellar);
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP OOP</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            
+        </div>
+    </main>
+</body>
+</html>
