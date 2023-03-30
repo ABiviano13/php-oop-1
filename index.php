@@ -12,7 +12,32 @@ $interstellar = new Movie(
 
 $interstellar->anno_di_uscita = '2014';
 
-var_dump($interstellar);
+// var_dump($interstellar);
+
+$inception = new Movie(
+    'Inception',
+    'Christopher Nolan',
+    'Syncopy Films, Warner Bros., Legendary Pictures',
+    'Azione',
+    '148 min'
+);
+
+$inception->anno_di_uscita = '2010';
+
+// var_dump($inception);
+
+$the_imitation_game = new Movie(
+    'The Imitation Game',
+    'Morten Tyldum',
+    'Black Bear Pictures, Bristol Automotive',
+    'Biografico',
+    '114 min'
+);
+
+$inception->anno_di_uscita = '2014';
+
+// var_dump($the_imitation_game);
+
 
 ?>
 
@@ -28,8 +53,17 @@ var_dump($interstellar);
     <main>
         <div class="container">
             <ul>
+                <h1>
+                    Lista di Film più famosi
+                </h1>
                 <li>
                     <?php echo $interstellar->getMovie(); ?>
+                </li>
+                <li>
+                <?php echo $inception->getMovie(); ?>
+                </li>
+                <li>
+                <?php echo $the_imitation_game->getMovie(); ?>
                 </li>
             </ul>
         </div>
