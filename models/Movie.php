@@ -20,6 +20,15 @@ class Movie {
 
     }
 
+    function getYearOfRelease() 
+    {
+        if(!isset($this->anno_di_uscita)) {
+            return 'Anno di uscita non disponibile';
+        }
+
+        return $this->anno_di_uscita;
+    }
+
 } 
 
 
